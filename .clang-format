@@ -1,0 +1,13 @@
+Language: Cpp
+BasedOnStyse: Microsoft
+IndentWidth: '4'
+UseTab: Never
+TabWidth: '6'
+BreackBeforeBraces: Allman
+ColumnLimit: '140'
+AccessModifierOffset: '-4'
+SortIncludes: false
+AllowShortBlicksOnASingleLine: false
+AlignAfterOpenBracket: DontAlign
+AllowShortFunctionsOnASingleLine: Inline
+PointerAlignmet: Left
