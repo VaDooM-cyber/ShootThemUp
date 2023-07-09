@@ -7,7 +7,7 @@
 #include "STUEquipFinishedAnimNotify.generated.h"
 
 UCLASS()
-class SHOOTTHEMUP_API USTUEquipFinishedAnimNotify : public UAnimNotify
+class SHOOTTHEMUP_API USTUEquipFinishedAnimNotify : public USTUAnimNotify
 {
 	GENERATED_BODY()
 

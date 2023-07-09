@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Animations/STUAnimNotify.h"
+#include "Animation/AnimNotifies/AnimNotify.h"
 #include "STUAnimNotify.generated.h"
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FOnNotifiedSignature, USkeletalMeshComponent*)
