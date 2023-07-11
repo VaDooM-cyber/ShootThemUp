@@ -26,19 +26,24 @@ public:
 	void ChangeClip();
 	bool CanReload() const;
 
+	FWeaponUIData GetUIData() const { return UIData; }
+
 protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		USkeletalMeshComponent* WeaponMesh;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 		FName MuzzleSocketName = "MuzzleSocket";
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 		float TraceMaxDistance = 2000.0f;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 		FAmmoData DefaultAmmo {30, 10, false};
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
+		FWeaponUIData UIData;
 
 
 	virtual void BeginPlay() override;

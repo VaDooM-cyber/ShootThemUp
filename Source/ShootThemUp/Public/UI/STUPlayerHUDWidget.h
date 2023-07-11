@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "STUCoreTypes.h"
 #include "STUPlayerHUDWidget.generated.h"
 
 
@@ -16,5 +17,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, category = "UI")
 		float GetHealthPercent() const;
+
+	UFUNCTION(BlueprintCallable, category = "UI")
+		bool GetWeaponUIData(FWeaponUIData& UIData) const;
 	
 };
